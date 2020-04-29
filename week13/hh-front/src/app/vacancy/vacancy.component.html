@@ -1,0 +1,10 @@
+<h1>Vacancies</h1>
+<div *ngFor="let vacancy of vacancies">
+  <a routerLink="/vacancies/{{vacancy.id}}">{{ vacancy.name }}</a>
+
+  <button (click)="deleteVacancy(vacancy.id)">Delete</button>
+
+</div>
+<button routerLink="">
+  Back
+</button>
